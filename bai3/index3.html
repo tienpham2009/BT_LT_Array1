@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bai 3</title>
+</head>
+<body>
+<script>
+    let arr = [];
+    let n = +prompt('nhap so phan tu trong mang');
+    let number = 0;
+    for (let i = 0; i < n; i++) {
+        number = +prompt('nhap phan tu cua mang');
+        arr.push(number);
+    }
+    document.write('mang arr la:' + arr + '<br>');
+    let max = arr[0];
+    for (let i = 1; i < arr.length; i++) {
+        if (arr[i] > max) {
+            max = arr[i];
+        }
+    }
+    let sum = 0;
+    let avg = 0;
+    for (let i = 0; i < arr.length; i++){
+        sum += arr[i];
+    }
+    avg = sum / arr.length;
+    document.write('max is :' + max + 'average :' + avg);
+</script>
+</body>
+</html>

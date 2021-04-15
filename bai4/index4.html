@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bai 4</title>
+</head>
+<body>
+<script>
+    let arr = [];
+    let n = +prompt('nhap so phan tu trong mang');
+    let number = 0;
+    for (let i = 0; i < n; i++) {
+        number = +prompt('nhap phan tu cua mang');
+        arr.push(number);
+    }
+    document.write('mang arr la:' + arr + '<br>');
+    let fisrt = 0;
+    let last = arr.length - 1;
+    let newArr = [];
+    // while ( fisrt < last){
+    //     b = arr[fisrt];
+    //     arr[fisrt] = arr[last];
+    //     arr[last] = b;
+    //     fisrt++;
+    //     last--;
+        for (let i = 0 ; i < arr.length ; i++ ){
+            newArr.push(arr[arr.length -i -1])
+        }
+    // }
+
+    document.write('mang sau khi dao nguoc la :' + newArr);
+</script>
+</body>
+</html>

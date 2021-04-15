@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bai 1</title>
+</head>
+<body>
+<script>
+    let arr = [];
+    let n = +prompt('nhap so phan tu trong mang');
+    let count = 0;
+    for (let i = 0; i < n; i++) {
+        let number = +prompt('nhap phan tu cua mang');
+        arr.push(number);
+    }
+    document.write('mang arr la:[' + arr + ']'+ '<br>');
+    for (let i = 0; i < arr.length; i++) {
+        if (arr[i] > 10) {
+            count++;
+        }
+    }
+    document.write('co'+ count + 'phan tu lon hon 10');
+</script>
+</body>
+</html>

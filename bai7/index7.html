@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bai 7</title>
+</head>
+<body>
+<script>
+    let arr = [];
+    let n = +prompt('nhap so phan tu trong mang');
+    let number = 0;
+    for (let i = 0; i < n; i++) {
+        number = +prompt('nhap phan tu cua mang');
+        arr.push(number);
+    }
+    document.write('mang arr la:' + arr + '<br>');
+    let  V = +prompt('nhap vao so nguyen V');
+    let flag = true;
+    for (let i = 0 ; i < arr.length ; i++){
+        if ( arr.indexOf(V) !== -1){
+            flag = true;
+        }else {
+            flag = false;
+        }
+    }
+    if ( flag){
+       for ( i = arr.indexOf(V) ; i < arr.length; i++){
+           arr[i] = arr[i + 1];
+       }
+       arr[arr.length -1] = 0;
+       document.write('mang sau khi da xoa' + v + 'la' + arr);
+    }else {
+        document.write(V + 'is not in the array' );
+    }
+</script>
+</body>
+</html>

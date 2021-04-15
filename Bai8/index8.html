@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bai 8</title>
+</head>
+<body>
+<script>
+    let arr = [];
+    let n = +prompt('nhap so phan tu trong mang');
+    let number = 0;
+    for (let i = 0; i < n; i++) {
+        number = +prompt('nhap phan tu cua mang');
+        arr.push(number);
+    }
+    document.write('mang arr la:' + arr + '<br>');
+    arr.sort(function (a,b){return b - a})
+    document.write('mang sau khi da sap xep la :' + arr);
+</script>
+</body>
+</html>
